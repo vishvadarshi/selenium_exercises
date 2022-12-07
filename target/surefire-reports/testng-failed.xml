@@ -6,7 +6,7 @@
       <class name="com.myexamples.Tests.LoginTest">
         <methods>
           <include name="quitBrowser"/>
-          <include name="loginValidation"/>
+          <include name="loginFailValidation"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.myexamples.Tests.LoginTest -->

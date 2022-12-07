@@ -4,6 +4,7 @@ package com.myexamples.Tests;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,8 @@ public class LoginTest extends BaseTest {
 
     /*private String userName = "somethig";
     private String password = "letmein";*/
+
+
 
     @Test
     public void loginValidation(){
@@ -46,7 +49,7 @@ public class LoginTest extends BaseTest {
         lp1.navigateToHomePageAfterLogin(user1.getuserName1(), user1.getpassWord1());
         String name = h1.validateUserAfterLogin();
         //assertEquals(user.getuserName(), name);
-        assertEquals(user1.getuserName1(), name);
+        assertEquals(user1.getuserName1()+"sss", name);
 
         System.out.println(name);
     }
