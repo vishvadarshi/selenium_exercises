@@ -23,7 +23,7 @@ public class LoginPage {
     }
 
     public HomePage navigateToHomePageAfterLogin(String un, String pw){
-        
+        Report.LogStep("Filling the login details");
         driver.findElement(userName).sendKeys(un);
         driver.findElement(password).sendKeys(pw);
         driver.findElement(loginButton).click();
@@ -32,7 +32,7 @@ public class LoginPage {
         } catch (Exception e) {
         
             e.printStackTrace();
-        }
+        }   
         return new HomePage(driver);
         
     }

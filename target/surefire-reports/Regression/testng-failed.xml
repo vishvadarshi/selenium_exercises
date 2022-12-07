@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="3" name="jupitertoystestRegression1(failed)" verbose="0">
+    <classes>
+      <class name="com.myexamples.Tests.LoginTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="loginValidation"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.myexamples.Tests.LoginTest -->
+    </classes>
+  </test> <!-- jupitertoystestRegression1(failed) -->
+</suite> <!-- Failed suite [Regression] -->

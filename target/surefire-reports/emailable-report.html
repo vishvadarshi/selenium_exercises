@@ -9,10 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Regression</th></tr>
-<tr><td><a href="#t0">jupitertoystestRegression1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,929</td><td></td><td></td></tr>
+<tr><td><a href="#t0">jupitertoystestRegression1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,448</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">jupitertoystestRegression1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.myexamples.Tests.LoginTest</td><td><a href="#m0">loginValidation</a></td><td rowspan="1">1670375303328</td><td rowspan="1">812</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">jupitertoystestRegression1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.myexamples.Tests.LoginTest</td><td><a href="#m0">loginValidation</a></td><td rowspan="1">1670412238635</td><td rowspan="1">62</td></tr><tr><th colspan="4">jupitertoystestRegression1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.myexamples.Tests.LoginTest</td><td><a href="#m1">loginFailValidation</a></td><td rowspan="1">1670412237741</td><td rowspan="1">889</td></tr></tbody>
 </table>
-<h2>jupitertoystestRegression1</h2><h3 id="m0">com.myexamples.Tests.LoginTest#loginValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>jupitertoystestRegression1</h2><h3 id="m0">com.myexamples.Tests.LoginTest#loginValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.95)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f68494fd2630f1e68913aa6b2ff2d35, clickElement {id=844eb660-882b-443b-9cc7-eeb2812e82a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 107.0.5304.18 (fde5ebf4e16d..., userDataDir: C:\Users\Ishara\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55234/devtoo..., se:cdpVersion: 108.0.5359.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3f68494fd2630f1e68913aa6b2ff2d35)] -&gt; id: nav-login]
+Session ID: 3f68494fd2630f1e68913aa6b2ff2d35
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.myexamples.Pages.HomePage.clickLoginBtn(HomePage.java:38)
+	at com.myexamples.Tests.LoginTest.loginValidation(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.myexamples.Tests.LoginTest#loginFailValidation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Filling the login details</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
