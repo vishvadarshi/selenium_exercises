@@ -28,7 +28,7 @@ public class LoginPage {
         driver.findElement(password).sendKeys(pw);
         driver.findElement(loginButton).click();
         try {
-            Report.takeSnapShot(driver, "D:\\VISHVA\\SeleniumWebDriver\\My test\\Snapshots\\login1.png") ;
+            Report.takeScreenShot(driver) ;
         } catch (Exception e) {
         
             e.printStackTrace();

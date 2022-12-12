@@ -2,20 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-07T12:08:19 AEDT" name="Regression" finished-at="2022-12-07T12:08:24 AEDT" duration-ms="4929">
+  <suite started-at="2022-12-12T15:12:03 AEDT" name="Regression" finished-at="2022-12-12T15:12:10 AEDT" duration-ms="7132">
     <groups>
     </groups>
-    <test started-at="2022-12-07T12:08:19 AEDT" name="jupitertoystestRegression1" finished-at="2022-12-07T12:08:24 AEDT" duration-ms="4929">
-      <class name="com.myexamples.Tests.LoginTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.myexamples.Tests.LoginTest@20ce78ec]" started-at="2022-12-07T12:08:19 AEDT" name="launchBrowser" finished-at="2022-12-07T12:08:23 AEDT" duration-ms="4088" status="PASS">
+    <test started-at="2022-12-12T15:12:03 AEDT" name="jupitertoystestRegression1" finished-at="2022-12-12T15:12:10 AEDT" duration-ms="7132">
+      <class name="com.myexamples.Tests.ShopTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.myexamples.Tests.ShopTest@2145b572]" started-at="2022-12-12T15:12:03 AEDT" name="launchBrowser" finished-at="2022-12-12T15:12:08 AEDT" duration-ms="4218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginValidation()[pri:0, instance:com.myexamples.Tests.LoginTest@20ce78ec]" started-at="2022-12-07T12:08:23 AEDT" name="loginValidation" finished-at="2022-12-07T12:08:24 AEDT" duration-ms="812" status="PASS">
+        <test-method signature="buyShopItems()[pri:0, instance:com.myexamples.Tests.ShopTest@2145b572]" started-at="2022-12-12T15:12:08 AEDT" name="buyShopItems" finished-at="2022-12-12T15:12:10 AEDT" duration-ms="2873" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValidation -->
-      </class> <!-- com.myexamples.Tests.LoginTest -->
+        </test-method> <!-- buyShopItems -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.myexamples.Tests.ShopTest@2145b572]" started-at="2022-12-12T15:12:10 AEDT" name="teardown" finished-at="2022-12-12T15:12:10 AEDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyShopItems status=SUCCESS method=ShopTest.buyShopItems()[pri:0, instance:com.myexamples.Tests.ShopTest@2145b572] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myexamples.Tests.ShopTest -->
     </test> <!-- jupitertoystestRegression1 -->
   </suite> <!-- Regression -->
 </testng-results>

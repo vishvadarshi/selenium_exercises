@@ -13,20 +13,22 @@ public class HomePage {
     @FindBy(id = "nav-home")
     WebElement home;
 
-    @FindBy(id = "nav-shop")
-    WebElement shop;
+    
 
     @FindBy(id = "nav-contact")
     WebElement contact;
 
     @FindBy(xpath = "//a[text()='Start Shopping »']")
     WebElement startShoppingBtn;
+
+    By shopTab = By.xpath("//a[text()='Shop']");
 	
 	/*  @FindBy(xpath = "//a[text()='Login']")
     WebElement loginbtn;*/
 
     By loginbtn = By.id("nav-login");
     By userName = By.id("nav-user");
+    By shop = By.id("nav-shop");
     
     /*initialisation */
     public HomePage(WebDriver driver){
@@ -40,6 +42,10 @@ public class HomePage {
 
     public String validateUserAfterLogin(){
         return driver.findElement(userName).getText();    
+    }
+
+    public void clickShopBtn(){
+        driver.findElement(shopTab).click();
     }
 }
 

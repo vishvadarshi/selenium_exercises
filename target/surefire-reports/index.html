@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="com.myexamples.Tests.LoginTest" class="method navigator-link" hash-for-method="loginValidation">loginValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="com.myexamples.Tests.ShopTest" class="method navigator-link" hash-for-method="buyShopItems">buyShopItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -121,14 +121,14 @@
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.myexamples.Tests.LoginTest</span>
+              <span class="class-name">com.myexamples.Tests.ShopTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginValidation">
-                  </a> <!-- loginValidation -->
-                  <span class="method-name">loginValidation</span>
+                  <a name="buyShopItems">
+                  </a> <!-- buyShopItems -->
+                  <span class="method-name">buyShopItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;Regression&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;jupitertoystestRegression1&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.myexamples.Tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.myexamples.Tests.ShopTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- jupitertoystestRegression1 --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginValidation')
-data.setCell(0, 2, 'com.myexamples.Tests.LoginTest')
-data.setCell(0, 3, 363);
+data.setCell(0, 1, 'buyShopItems')
+data.setCell(0, 2, 'com.myexamples.Tests.ShopTest')
+data.setCell(0, 3, 2873);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 363 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -220,15 +220,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.myexamples.Tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">com.myexamples.Tests.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginValidation</span>
-                <span class="method-start">3924 ms</span>
+                <span class="method-name">buyShopItems</span>
+                <span class="method-start">4220 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=buyShopItems status=SUCCESS method=ShopTest.buyShopItems()[pri:0, instance:com.myex...)</span>
+                <span class="method-start">7094 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

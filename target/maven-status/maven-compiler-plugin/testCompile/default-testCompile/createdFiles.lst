@@ -1,5 +1,11 @@
-com\myexamples\Pages\HomePage.class
-com\myexamples\Pages\LoginPage.class
+com\myexamples\Data\ShopItemData.class
+com\myexamples\Pages\ShopPage.class
 com\myexamples\Data\UserDetails.class
+com\myexamples\Tests\ShopTest.class
 com\myexamples\Tests\BaseTest.class
 com\myexamples\Tests\LoginTest.class
+com\myexamples\Framework\Report.class
+com\myexamples\Pages\CartPage.class
+com\myexamples\Pages\HomePage.class
+com\myexamples\Pages\LoginPage.class
+com\myexamples\Framework\Settings.class

@@ -6,7 +6,7 @@
 
         <classes>
 
-            <class name="com.myexamples.Tests.LoginTest"/>
+            <class name="com.myexamples.Tests.ShopTest"/>
 
         </classes>
 
